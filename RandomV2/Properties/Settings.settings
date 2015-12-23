@@ -1,9 +1,9 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Random_string_generator.Properties" GeneratedClassName="Settings">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="RandomStringGeneratorNamespace.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="Type" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Цифровой</Value>
+    <Setting Name="Type" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="Length" Type="System.Decimal" Scope="User">
       <Value Profile="(Default)">8</Value>
