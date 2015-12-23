@@ -107,11 +107,9 @@
             this.Name = "MainForm";
             this.Text = "Генератор случайных строк";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);
-            this.Shown += new System.EventHandler(this.MainForm_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.LengthNumeric)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         private System.Random random = new System.Random((int)System.DateTime.Now.Ticks & 0x0000FFFF);

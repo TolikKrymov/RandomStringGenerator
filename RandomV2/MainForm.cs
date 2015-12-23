@@ -6,6 +6,7 @@ namespace RandomStringGeneratorNamespace {
     public partial class MainForm : Form {
         public MainForm() {
             InitializeComponent();
+            LoadSettings();
         }
 
         private void GenerateButton_Click(object sender, EventArgs e) {
@@ -99,9 +100,13 @@ namespace RandomStringGeneratorNamespace {
             Properties.Settings.Default.Save();
         }
 
-        private void MainForm_Shown(object sender, EventArgs e) {
+        private void LoadSettings() {
             LengthNumeric.Value = Properties.Settings.Default.Length;
-            TypeCombo.SelectedIndex = Properties.Settings.Default.Type;
+            if (Properties.Settings.Default.Type >= 0 &&
+                Properties.Settings.Default.Type < TypeCombo.Items.Count)
+                TypeCombo.SelectedIndex = Properties.Settings.Default.Type;
+            else
+                TypeCombo.SelectedIndex = 0;
             TypeCombo.Text = TypeCombo.Items[TypeCombo.SelectedIndex].ToString();
         }
     }
